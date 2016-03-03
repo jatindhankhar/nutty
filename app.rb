@@ -6,7 +6,7 @@ require 'active_record'
 require 'bundler/setup'
 require 'yaml'
 
-require "./models/user.rb"
+require "./models/song.rb"
 
 dbconfig = YAML.load(ERB.new(File.read("config/database.yml")).result)
 
@@ -23,6 +23,7 @@ else
 end
 
 get '/' do
-	"Sinatra is up!"
+	"#{Song.count} is awesome "
 	#@user = User.find params[:id]
+
 end
