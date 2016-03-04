@@ -1,3 +1,3 @@
-require_relative  'models/song.rb'
+require './app.rb'
 puts ENV["RACK_ENV"]
 puts Song.count
