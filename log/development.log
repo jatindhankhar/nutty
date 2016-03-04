@@ -1,0 +1,9 @@
+D, [2016-03-03T22:23:10.378796 #13361] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "songs"[0m
+D, [2016-03-03T22:23:11.482820 #13361] DEBUG -- :   [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "songs"
+D, [2016-03-03T22:23:11.918477 #13361] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "songs"[0m
+D, [2016-03-03T22:23:12.215555 #13361] DEBUG -- :   [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "songs"
+D, [2016-03-03T22:23:12.482427 #13361] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "songs"[0m
+D, [2016-03-03T22:23:12.761096 #13361] DEBUG -- :   [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "songs"
+D, [2016-03-03T22:23:13.078690 #13361] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "songs"[0m
+D, [2016-03-03T22:23:13.464628 #13361] DEBUG -- :   [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "songs"
+D, [2016-03-03T22:23:13.766142 #13361] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "songs"[0m
