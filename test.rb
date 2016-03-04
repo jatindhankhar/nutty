@@ -8,9 +8,8 @@ end
 files = Dir.glob ENV["OPENSHIFT_DATA_DIR"] + "*.txt" # Find all text files
 
 files.each do |f|
-	puts "For genre #{File.basename(f,".txt")
-	open(f).each_line.t_a.sample(25).each do |lyric|
-		puts lyric
+	open(f).each_line.to_a.sample(25).each do |lyric|
+		add_entry(lyric,File.basename(f,".txt")) # Add each lyric with genre to Database
 	end
 end
 
