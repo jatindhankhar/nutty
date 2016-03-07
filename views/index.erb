@@ -39,11 +39,11 @@
           <div class="form-group form-group-lg">
             <select class="form-control" name="category" id="cat">
               <label for="category">Category</label>
-              <option value="bollywood">Bollywood</option>
+                <option value="rap">Rap</option>
               <option value="international">International</option>
               <option value="ed">Ed Sheeran</option>
-              <option value="rap">Rap</option>
               <option value="yo">Honey Singh</option>
+              <option value="bollywood">Bollywood</option>
             </select>
           </div>
           <div class="form-group form-group-lg">
@@ -56,15 +56,18 @@
        <blockquote cite="/" style="font-size: 32px ;" id="lyric">
 
        </blockquote>
-       <form class="form-inline" action="/vote" method="post">
-         <div class="btn-group" data-toggle="buttons-radio">
-       <button type="submit" name="upvote">Yes</button>
-       <button type="submit" name="downvote">No</button>
+       <form class="form-inline form-inline-lg" action="/vote" method="post" id="vote">
+         <div class="btn-group-inline" >
+           <button type="radio" name="vote" value="upvote" checked class="btn btn-lg btn-success"><span class="glyphicon glyphicon-thumbs-up"> </button>
+          <button type="radio" name="vote" value="downvote" class="btn btn-lg btn-danger"> <span class="glyphicon glyphicon-thumbs-down"></button>
    </div>
        <hr>
 
        </form>
-       <button type="button" class="btn btn-lg "> More!</button>
+       <div class="alert alert-success" id="vote_response">
+  <strong></strong>
+</div>
+       <button type="button" class="btn btn-lg " id="again"> More!</button>
       </div>
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -75,5 +78,8 @@
     <script src="js/vendor/bootstrap.min.js"></script>
 
     <script src="js/main.js"></script>
+    <noscript>
+      This site needs javascript to work correctly :(
+    </noscript>
   </body>
 </html>
