@@ -49,11 +49,10 @@ post '/vote' do
     if params[:type] == 'upvote'
       Song.find(target).increment!(:upvote)
       params[:type] + "d"
-    elsif target[:type] == 'downvote'
-      Song.find(target).increment!(:downvote)
-      params[:type] + "d"
-    else
-      'Type error'
- end
+    end
+		if params[:type] == 'downvote'
+			Song.find(target).increment!(:downvote)
+			params[:type] + "d"
+		end
  end
 end

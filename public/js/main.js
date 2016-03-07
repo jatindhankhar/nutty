@@ -5,7 +5,7 @@ $(document).ready(
     $("#tar").submit(function(event) {
       event.preventDefault();
       $(this).hide();
-      console.log("category is " + $("#cat").val())
+      //console.log("category is " + $("#cat").val())
       $.post('/', {
         category: $("#cat").val()
       }, function(response, data) {
@@ -43,6 +43,7 @@ $(document).ready(
       var votes = {
         type: $(this).val()
       };
+      console.log(votes);
       $.post('/vote', votes, function(response, data) {
         $("#vote").hide();
         //  $("#result").hide();
