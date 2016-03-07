@@ -23,7 +23,21 @@ else
 end
 
 get '/' do
-	"#{Song.count} is awesome "
-	#@user = User.find params[:id]
+	erb :index
 
+end
+
+
+post '/' do
+	#content_type :json
+	puts params
+	if params[:category]
+		Song.where(:genre => params[:category]).order("RANDOM()").first.lyric.to_s
+	else
+   "No such genre"
+	end
+end
+
+post '/vote' do
+ puts params
 end
