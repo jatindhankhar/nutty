@@ -48,11 +48,11 @@ post '/vote' do
     puts target
     if params[:type] == 'upvote'
       Song.find(target).increment!(:upvote)
-      params[:type] + "d"
+      "Upvoted"
     end
 		if params[:type] == 'downvote'
 			Song.find(target).increment!(:downvote)
-			params[:type] + "d"
+			"Downvoted"
 		end
  end
 end
